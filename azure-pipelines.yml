@@ -6,8 +6,10 @@
 trigger:
 - master
 
+#pool: WindowsPrivateAgents
+# # vmImage: 'windows-latest'
+
 pool: WindowsPrivateAgents
- # vmImage: 'windows-latest'
 
 variables:
   solution: '**/*.sln'

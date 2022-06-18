@@ -23,7 +23,7 @@ namespace SistemaDiagnostico.AccesoDatos
             this.Server = @"DESKTOP-V0884L8";
             this.User = "";
             this.Clave = "";
-            this.Autenticacion = true; //Windows
+            this.Autenticacion = false; //Windows
         }
 
         public SqlConnection EstablecerConexion()

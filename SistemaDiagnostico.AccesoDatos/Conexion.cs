@@ -20,9 +20,9 @@ namespace SistemaDiagnostico.AccesoDatos
         private Conexion()
         {
             this.BD = "db_Proyecto";
-            this.Server = @"DESKTOP-V0884L8";
-            this.User = "";
-            this.Clave = "";
+            this.Server = @"diagnostico.database.windows.net"; // "DESKTOP-V0884L8";
+            this.User = "ProyectoDiagnostico";
+            this.Clave = "Movistar2022";
             this.Autenticacion = false; //Windows
         }
 

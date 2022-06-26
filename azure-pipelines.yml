@@ -31,5 +31,33 @@ steps:
 
 - task: VSTest@2
   inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    codeCoverageEnabled: false
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    publishRunAttachments: false
+    
+- task: CoverageConverter@0
+  inputs:
+    searchFolderForTestFiles: '$(System.DefaultWorkingDirectory)'
+    vsTestExeFileLocation: 'D:\PROGRAMAS\VISUAL STUDIO 2019\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe'
+    vsTestArgs: '/EnableCodeCoverage'
+    listTestFiles: '**\bin\**\*.Tests*.dll'
+    temporaryFolderForCodeCoverage: $(Agent.TempDirectory)
+    temporaryFileCoveragexml: '\TestResults\DynamicCodeCoverage.coveragexml'
+    codeCoverageExeFileLocation: 'D:\PROGRAMAS\VISUAL STUDIO 2019\Team Tools\Dynamic Code Coverage Tools\CodeCoverage.exe'
+- task: reportgenerator@5
+  inputs:
+    reports: '$(Agent.TempDirectory)\TestResults\DynamicCodeCoverage.coveragexml'
+    targetdir: '$(System.DefaultWorkingDirectory)\TestResults\Coverage\Reports'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)\TestResults\Coverage\Reports\Cobertura.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)\TestResults\Coverage\Reports'

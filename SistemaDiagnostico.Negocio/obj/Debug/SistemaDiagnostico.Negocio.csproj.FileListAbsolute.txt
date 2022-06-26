@@ -97,3 +97,14 @@ D:\Proyecto\Calidad_SistemaDiagnostico\SistemaDiagnostico.Negocio\obj\Debug\Sist
 D:\Proyecto\Calidad_SistemaDiagnostico\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.csproj.CopyComplete
 D:\Proyecto\Calidad_SistemaDiagnostico\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.dll
 D:\Proyecto\Calidad_SistemaDiagnostico\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.pdb
+F:\calidadProyecto\SistemaDiagnostico.Negocio\bin\Debug\SistemaDiagnostico.Negocio.dll
+F:\calidadProyecto\SistemaDiagnostico.Negocio\bin\Debug\SistemaDiagnostico.Negocio.pdb
+F:\calidadProyecto\SistemaDiagnostico.Negocio\bin\Debug\SistemaDiagnostico.AccesoDatos.dll
+F:\calidadProyecto\SistemaDiagnostico.Negocio\bin\Debug\SistemaDiagnostico.Entidad.dll
+F:\calidadProyecto\SistemaDiagnostico.Negocio\bin\Debug\SistemaDiagnostico.AccesoDatos.pdb
+F:\calidadProyecto\SistemaDiagnostico.Negocio\bin\Debug\SistemaDiagnostico.Entidad.pdb
+F:\calidadProyecto\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.csprojAssemblyReference.cache
+F:\calidadProyecto\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.csproj.CoreCompileInputs.cache
+F:\calidadProyecto\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.csproj.CopyComplete
+F:\calidadProyecto\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.dll
+F:\calidadProyecto\SistemaDiagnostico.Negocio\obj\Debug\SistemaDiagnostico.Negocio.pdb
